@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C1 Use of English</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Menu -->
+    <div id="menu" class="screen active">
+        <h1>USE OF ENGLISH</h1>
+        <div class="menu-grid">
+            <button onclick="startActivity('multiple-choice')">Multiple Choice</button>
+            <button onclick="startActivity('gap-fill')">Gap-fill</button>
+            <button onclick="startActivity('word-formation')">Word Formation</button>
+            <button onclick="startActivity('sentence-transformation')">Sentence Transformation</button>
+        </div>
+    </div>
+
+    <!-- Activity Screens -->
+    <div id="multiple-choice" class="screen">
+        <h2>Multiple Choice</h2>
+        <div id="mcq-container"></div>
+        <button onclick="showScore()">Finish</button>
+        <button onclick="returnToMenu()">Return to Menu</button>
+    </div>
+
+    <div id="gap-fill" class="screen">
+        <h2>Gap-fill</h2>
+        <div id="gapfill-container"></div>
+        <button onclick="showScore()">Finish</button>
+        <button onclick="returnToMenu()">Return to Menu</button>
+    </div>
+
+    <div id="word-formation" class="screen">
+        <h2>Word Formation</h2>
+        <div id="wf-container"></div>
+        <button onclick="showScore()">Finish</button>
+        <button onclick="returnToMenu()">Return to Menu</button>
+    </div>
+
+    <div id="sentence-transformation" class="screen">
+        <h2>Sentence Transformation</h2>
+        <div id="st-container"></div>
+        <button onclick="showScore()">Finish</button>
+        <button onclick="returnToMenu()">Return to Menu</button>
+    </div>
+
+    <!-- Score Screen -->
+    <div id="score-screen" class="screen">
+        <h2>Your Score</h2>
+        <p id="score-display"></p>
+        <button onclick="returnToMenu()">Return to Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
